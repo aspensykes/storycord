@@ -15,8 +15,8 @@ Storycord is a Discord chatbot built with Discord.js. The bot generates AI stori
    - Visit https://console.developers.google.com/apis/credentials and generate API key credentials for your project.
    - Visit https://cse.google.com/cse/all and in the web form where you create/edit your custom search engine enable the "Image search" option.
 4. Create an `.env` file in the root directory with:
-   - `DISCORD_TOKEN`: a Discord bot user token
-   - `OPENAI_SECRET`: an OpenAI API secret token
+   - `DISCORD_TOKEN`: your Discord bot user token
+   - `OPENAI_SECRET`: your OpenAI API secret token
    - `GCS_API_KEY`: your Google Custom Search API key
    - `GCS_PROJECT_CX`: your Google Custom Search search engine ID (aka CX)
 5. Install all dependecies by running `npm install`.
