@@ -1,7 +1,7 @@
 {
-  "name": "autonomous-artistic-agent",
+  "name": "storycord",
   "version": "1.0.0",
-  "description": "Storycord is a Discord bot that generates stories through user prompts using the power of artificial intelligence. Users can supply Storycord with a scenario to act out, and it will generate a story based on that prompt using OpenAI's GPT-3 and present it in a visually appealing way.",
+  "description": "A Discord bot that generates stories through user prompts using the power of artificial intelligence.",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
