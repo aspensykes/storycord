@@ -21,10 +21,8 @@ Storycord is a Discord bot that generates stories, poems, and song lyrics throug
 6. Run the bot by running `node index.js`.
 
 **OPTIONAL:** If you want to add, remove, or modify any of the slash commands, you will need to run `deploy-commands.js` to update it on Discord's end. You have two options here:
-- Update it for a specified test server by setting `guildId` to the server's ID, and running `node deploy-commands.js development`. This is usually instant.
-- Update it Discord-wide by running `node deploy-commands.js production`. This can take up to an hour to update across servers.
-
-Hosted solution: Invite the bot to your Discord server [using this link.](https://discord.com/api/oauth2/authorize?client_id=947624885088301077&permissions=2147551296&scope=applications.commands%20bot) Please make sure it has permissions to Send and Read Messages, and has access to Slash Commands. **Note: As this bot is still in active development, the hosted instance may go down frequently and/or for long periods of time.**
+1. Update it for a specified test server by setting `guildId` to the server's ID, and running `node deploy-commands.js development`. This is usually instant.
+2. Update it Discord-wide by running `node deploy-commands.js production`. This can take up to an hour to update across servers.
 
 Storycord uses Discord's Slash Commands interface for interacting with the bot. Type a forward slash in the message box and select Storycord's icon on the left sidebar to see all available commands and their arguments.
 
