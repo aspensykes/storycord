@@ -27,4 +27,4 @@ Storycord is a Discord bot that generates stories, poems, and song lyrics throug
 Storycord uses Discord's Slash Commands interface for interacting with the bot. Type a forward slash in the message box and select Storycord's icon on the left sidebar to see all available commands and their arguments.
 
 ## License
-Storycord uses the MIT License. [Learn  more about the conditions of the license here.](https://github.com/aspensykes/storycord/blob/main/LICENSE)
+Storycord uses the MIT License. [Learn  more about the conditions of the license here.](/LICENSE)
