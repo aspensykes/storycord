@@ -1,10 +1,7 @@
 # Storycord
-Storycord is a Discord bot that generates stories, poems, and song lyrics through user prompts using the power of artificial intelligence. Users can supply Storycord with a scenario to act out, and it will generate a story based on that prompt using OpenAI's GPT-3 and present it in a visually appealing way.
+Storycord is a Discord bot that generates stories, poems, and song lyrics through user prompts using the power of artificial intelligence. Users can supply Storycord with a scenario to act out, and it will generate a story based on that prompt using OpenAI's GPT-3 and present it in a dynamic embed.
 
 ![Screenshot](https://i.imgur.com/d61zAjp.png)
-
-## About
-Storycord is a Discord chatbot built with Discord.js. The bot generates AI stories using OpenAI's GPT-3 language model. The story is presented in a nice embed with a relevant image pulled from Google Images based on the user's prompt, and the color of the embed is determined by the dominant color of the pulled image, making for an embed that transforms as the stories do.
 
 ## Usage
 1. Install Node.js on your machine if it is not already installed.
@@ -15,12 +12,17 @@ Storycord is a Discord chatbot built with Discord.js. The bot generates AI stori
    - Visit https://console.developers.google.com/apis/credentials and generate API key credentials for your project.
    - Visit https://cse.google.com/cse/all and in the web form where you create/edit your custom search engine enable the "Image search" option.
 4. Create an `.env` file in the root directory with:
+   - `DISCORD_CLIENT_ID`: your Discord bot user ID
    - `DISCORD_TOKEN`: your Discord bot user token
    - `OPENAI_SECRET`: your OpenAI API secret token
    - `GCS_API_KEY`: your Google Custom Search API key
    - `GCS_PROJECT_CX`: your Google Custom Search search engine ID (aka CX)
 5. Install all dependecies by running `npm install`.
 6. Run the bot by running `node index.js`.
+
+**OPTIONAL:** If you want to add, remove, or modify any of the slash commands, you will need to run `deploy-commands.js` to update it on Discord's end. You have two options here:
+- Update it for a specified test server by setting `guildId` to the server's ID, and running `node deploy-commands.js development`. This is usually instant.
+- Update it Discord-wide by running `node deploy-commands.js production`. This can take up to an hour to update across servers.
 
 Hosted solution: Invite the bot to your Discord server [using this link.](https://discord.com/api/oauth2/authorize?client_id=947624885088301077&permissions=2147551296&scope=applications.commands%20bot) Please make sure it has permissions to Send and Read Messages, and has access to Slash Commands. **Note: As this bot is still in active development, the hosted instance may go down frequently and/or for long periods of time.**
 
