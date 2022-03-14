@@ -77,7 +77,7 @@ module.exports = {
                 if (i.customId === 'again') {
                     try {
                         await i.deferReply();
-                        await generateStory(givenTopic);
+                        await generatePoem(givenTopic);
                         embed.setDescription(generatedPoem).setThumbnail(thumbUrl).setColor(color);
 
                         await i.followUp({ embeds: [ embed ] });
