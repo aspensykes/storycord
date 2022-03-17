@@ -13,7 +13,7 @@ const commands = [];
 const commandFiles = fs.readdirSync('./commands').filter(file => file.endsWith('.js'));
 
 const clientId = process.env.DISCORD_CLIENT_ID; // Your bot ID here
-const guildId = '533880804229513217'; // Your server ID here
+const guildId = '000000000000000000'; // Your server ID here
 
 for (const file of commandFiles) {
 	const command = require(`./commands/${file}`);
